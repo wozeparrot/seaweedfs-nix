@@ -63,6 +63,7 @@
         };
       in {
         packages.default = pkgs.seaweedfs;
+        packages.seaweedfs = pkgs.seaweedfs;
       }
     )
     // {
