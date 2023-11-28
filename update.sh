@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i bash -p nurl
+#!nix-shell -i bash -p nurl gnused
 set -euo pipefail
 IFS=$'\n\t'
 
@@ -21,7 +21,7 @@ function replace_vendor_hash() {
     local vendor_hash="$1"
     local file="$2"
     local tmp="$(mktemp)"
-    sed "s/vendorHash = \".*\"/vendorHash = \"$vendor_hash\"/" "$file" > "$tmp"
+    sed "s|vendorHash = \".*\"|vendorHash = \"$vendor_hash\"|" "$file" > "$tmp"
     mv "$tmp" "$file"
 }
 
