@@ -44,11 +44,11 @@
     "seaweedfs": {
       "flake": false,
       "locked": {
-        "lastModified": 1705033426,
-        "narHash": "sha256-EIpIeOfnJcQbGZ06Ez4cOoUn0Kzds/AkLd4GfUmoPgM=",
+        "lastModified": 1705086269,
+        "narHash": "sha256-W8SNbnW4g2nbHS6EXr236NJGUlKI7khh2c0KUOhTaGU=",
         "owner": "seaweedfs",
         "repo": "seaweedfs",
-        "rev": "0e8a54f6f67e534d3af01d70ce45bd9cbfe87d42",
+        "rev": "8d23e36c4512679e1c866bf166bd57b6b52bcc90",
         "type": "github"
       },
       "original": {
