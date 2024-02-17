@@ -17,41 +17,41 @@
     ...
   }: let
     overlay = final: prev: {
-      seaweedfs = prev.buildGoModule rec {
-        pname = "seaweedfs";
-        version = inputs.seaweedfs.shortRev;
-        src = inputs.seaweedfs;
+      seaweedfs = prev.buildGo122Module rec {
+          pname = "seaweedfs";
+          version = inputs.seaweedfs.shortRev;
+          src = inputs.seaweedfs;
 
-        vendorHash = "";
+          vendorHash = "sha256-ejWVFedJEwS0tIqBcF7rot9WVD142sj+HGQueMshkwI=";
 
-        subPackages = ["weed"];
+          subPackages = ["weed"];
 
-        ldflags = [
-          "-w"
-          "-s"
-          "-X github.com/seaweedfs/seaweedfs/weed/util.COMMIT=${version}"
-        ];
+          ldflags = [
+            "-w"
+            "-s"
+            "-X github.com/seaweedfs/seaweedfs/weed/util.COMMIT=${version}"
+          ];
 
-        tags = [
-          "elastic"
-          "gocdk"
-          "sqlite"
-          "ydb"
-          "tikv"
-        ];
+          tags = [
+            "elastic"
+            "gocdk"
+            "sqlite"
+            "ydb"
+            "tikv"
+          ];
 
-        preBuild = ''
-          export GODEBUG=http2client=0
-        '';
+          preBuild = ''
+            export GODEBUG=http2client=0
+          '';
 
-        preCheck = ''
-          # Test all targets.
-          unset subPackages
+          preCheck = ''
+            # Test all targets.
+            unset subPackages
 
-          # Remove unmaintained tests ahd those that require additional services.
-          rm -rf unmaintained test/s3
-        '';
-      };
+            # Remove unmaintained tests ahd those that require additional services.
+            rm -rf unmaintained test/s3
+          '';
+        };
     };
   in
     flake-utils.lib.eachDefaultSystem
