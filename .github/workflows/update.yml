@@ -17,5 +17,7 @@ jobs:
       - run: "git config user.name seaweedfs-nix"
       - run: "nix flake update --commit-lock-file"
       - run: ./update.sh
+      - run: nix flake check
+      - run: nix build
       - run: "git commit -am 'feat: update vendorHash' || true"
       - run: "git push -u origin main"
