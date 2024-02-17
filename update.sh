@@ -1,6 +1,6 @@
 #!/usr/bin/env nix-shell
 #!nix-shell -i bash -p nurl gnused
-set -euo pipefail
+set -xeuo pipefail
 IFS=$'\n\t'
 
 function get_vendor_hash() {
@@ -10,7 +10,7 @@ function get_vendor_hash() {
         echo "Failed to fetch $url" >&2
         exit 1
     fi
-    local stderr="$(nix build --impure --no-link --expr "with (import <nixpkgs> {}); buildGoModule {pname=\"\";version=\"\";src=$src;vendorHash=\"\";}" 2>&1 > /dev/null)"
+    local stderr="$(nix build --impure --no-link --expr "with (import <nixpkgs> {}); buildGo122Module {pname=\"\";version=\"\";src=$src;vendorHash=\"\";}" 2>&1 > /dev/null)"
     # vendorHash line contains "got: "
     local vendor_hash="$(echo "$stderr" | grep -oP '(?<=got: ).*')"
     vendor_hash="$(echo "$vendor_hash" | tr -d '[:space:]')"
