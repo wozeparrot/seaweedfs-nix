@@ -22,7 +22,7 @@
           version = inputs.seaweedfs.shortRev;
           src = inputs.seaweedfs;
 
-          vendorHash = "sha256-OE583rOP2KhXj3EnMkfTMYwBfgePQNa4BG8Tnj0gm8M=";
+          vendorHash = "sha256-GdcsMNVpVwrkXmfZC8w1KcY9PjSoWjlH+B9mY7Gbj6c=";
 
           subPackages = ["weed"];
 
