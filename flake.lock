@@ -20,11 +20,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1712026416,
-        "narHash": "sha256-N/3VR/9e1NlN49p7kCiATiEY6Tzdo+CbrAG8kqCQKcI=",
+        "lastModified": 1712090461,
+        "narHash": "sha256-PAfFp+YEKpkzwz6ruXQMvTa1puO4ySSu2G4Sp/jkCc8=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "080a4a27f206d07724b88da096e27ef63401a504",
+        "rev": "e976fa8f49c35cf28496301a1ef2aa23ad576b56",
         "type": "github"
       },
       "original": {
@@ -44,11 +44,11 @@
     "seaweedfs": {
       "flake": false,
       "locked": {
-        "lastModified": 1712114322,
-        "narHash": "sha256-/pJCG2dP0Or3/Yd2Sgu/iriD2vjOppqHAzc3esCh8lQ=",
+        "lastModified": 1712160574,
+        "narHash": "sha256-uh99ZFpvJy+g+dgDjntu4hMGepKJhWg8N3HR/MptTT0=",
         "owner": "seaweedfs",
         "repo": "seaweedfs",
-        "rev": "b19c9847c6241cc76e087a4b930a776ef5f07d11",
+        "rev": "881c9229720d9556cc8d5cf13ec8d9b7275b5b86",
         "type": "github"
       },
       "original": {
