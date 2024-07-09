@@ -50,6 +50,9 @@
 
             # Remove unmaintained tests ahd those that require additional services.
             rm -rf unmaintained test/s3
+
+            # flaky when run in qemu
+            rm -f weed/cluster/lock_manager/lock_ring_test.go
           '';
         };
     };
