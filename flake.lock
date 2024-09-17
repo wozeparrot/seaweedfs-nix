@@ -5,11 +5,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1710146030,
-        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "lastModified": 1726560853,
+        "narHash": "sha256-X6rJYSESBVr3hBoH0WbKE5KvhPU5bloyZ2L4K60/fPQ=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "rev": "c1dfcf08411b08f6b8615f7d8971a2bfa81d5e8a",
         "type": "github"
       },
       "original": {
@@ -44,11 +44,11 @@
     "seaweedfs": {
       "flake": false,
       "locked": {
-        "lastModified": 1726514709,
-        "narHash": "sha256-PojxBdKgVAjOp4rgwN97JGs0mWrvjqXtxQ5UDx7OLo0=",
+        "lastModified": 1726553463,
+        "narHash": "sha256-bNaK287k3JKsh4ZD+emAKKsV1JgVbyXNiLbIvOF7i5w=",
         "owner": "seaweedfs",
         "repo": "seaweedfs",
-        "rev": "e73ab5c0c49dfbd1870bccbd1e6d694d46fc8d73",
+        "rev": "2b13d2c083a8cf2e1efc616e3301ce590c78cf11",
         "type": "github"
       },
       "original": {
