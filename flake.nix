@@ -17,12 +17,12 @@
     ...
   }: let
     overlay = final: prev: {
-      seaweedfs = prev.buildGo122Module rec {
+      seaweedfs = prev.buildGoModule rec {
           pname = "seaweedfs";
           version = inputs.seaweedfs.shortRev;
           src = inputs.seaweedfs;
 
-          vendorHash = "sha256-PuH9fRUmdA3QOrhVN3YtsMrW4tuU600sBUI4d57JoRA=";
+          vendorHash = "sha256-veBrmTrdVdFrHXdexChXhOV7p5LcOgxfNbrrB0G/9is=";
 
           subPackages = ["weed"];
 
